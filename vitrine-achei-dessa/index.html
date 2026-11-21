@@ -46,9 +46,19 @@
     <p>Descrição rápida do produto, benefício principal ou promoção ativa.</p>
 
     <div class="cupom-box">
-      <span>Cupom:</span>
-      <strong class="cupom-codigo">DESSA10</strong>
-    </div>
+  <div class="cupom-info">
+    <span>Cupom:</span>
+    <strong class="cupom-codigo">DESSA10</strong>
+  </div>
+  <button
+    type="button"
+    class="btn-copiar-cupom"
+    data-cupom="DESSA10"
+    aria-label="Copiar cupom DESSA10"
+  >
+    Copiar
+  </button>
+</div>
 
     <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Ver oferta</a>
   </div>
@@ -84,5 +94,38 @@
       <p>&copy; 2026 Achei Dessa. Todos os direitos reservados.</p>
     </div>
   </footer>
+  <script>
+  document.addEventListener("click", async (event) => {
+    const botao = event.target.closest(".btn-copiar-cupom");
+    if (!botao) return;
+
+    const codigo = botao.dataset.cupom;
+    if (!codigo) return;
+
+    try {
+      await navigator.clipboard.writeText(codigo);
+    } catch {
+      const campoTemp = document.createElement("textarea");
+      campoTemp.value = codigo;
+      campoTemp.setAttribute("readonly", "");
+      campoTemp.style.position = "absolute";
+      campoTemp.style.left = "-9999px";
+      document.body.appendChild(campoTemp);
+      campoTemp.select();
+      document.execCommand("copy");
+      document.body.removeChild(campoTemp);
+    }
+
+    const textoOriginal = botao.textContent;
+    botao.textContent = "Copiado!";
+    botao.classList.add("copiado");
+
+    clearTimeout(botao._timer);
+    botao._timer = setTimeout(() => {
+      botao.textContent = textoOriginal;
+      botao.classList.remove("copiado");
+    }, 1800);
+  });
+</script>
 </body>
 </html>
