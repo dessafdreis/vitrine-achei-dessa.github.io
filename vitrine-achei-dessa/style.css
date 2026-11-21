@@ -275,3 +275,36 @@ main.container {
   padding: 2px 8px;
   border-radius: 6px;
 }
+
+.cupom-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.btn-copiar-cupom {
+  border: 1px solid var(--accent);
+  background-color: #ffffff;
+  color: var(--accent-hover);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-copiar-cupom:hover,
+.btn-copiar-cupom:focus-visible {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+.btn-copiar-cupom.copiado {
+  background-color: #15803d;
+  border-color: #15803d;
+  color: #ffffff;
+}
