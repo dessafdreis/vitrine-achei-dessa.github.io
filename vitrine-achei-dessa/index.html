@@ -28,8 +28,6 @@
       <a class="category-pill" href="#fitness">💪 Fitness</a>
       <a class="category-pill" href="#casa">🏠 Saude e Suplementação</a>
       <a class="category-pill" href="#casa">🐾 Pet</a>
-      
-      
       <a class="category-pill" href="#especiais">🎄 Especiais</a>
     </div>
   </nav>
@@ -39,36 +37,62 @@
       <h2>Destaques &amp; Especiais</h2>
       <div class="cards-grid">
         <article class="card card-destaque">
-  <span class="badge-selo">🔥 Achadinho do Dia</span>
-  <img src="imagens/natal-1.jpg" alt="Destaque especial 1" class="card-img" />
-  <div class="card-body">
-    <h3>Achado em Destaque #1</h3>
-    <p>Descrição rápida do produto, benefício principal ou promoção ativa.</p>
+          <span class="badge-selo">🔥 Achadinho do Dia</span>
+          <img src="imagens/natal-1.jpg" alt="Destaque especial 1" class="card-img" />
+          <div class="card-body">
+            <h3>Achado em Destaque #1</h3>
+            <p>Descrição rápida do produto, benefício principal ou promoção ativa.</p>
 
-    <div class="cupom-box">
-  <div class="cupom-info">
-    <span>Cupom:</span>
-    <strong class="cupom-codigo">DESSA10</strong>
-  </div>
-  <button
-    type="button"
-    class="btn-copiar-cupom"
-    data-cupom="DESSA10"
-    aria-label="Copiar cupom DESSA10"
-  >
-    Copiar
-  </button>
-</div>
+            <div class="cupom-box">
+              <div class="cupom-info">
+                <span>Cupom:</span>
+                <strong class="cupom-codigo">DESSA10</strong>
+              </div>
+              <button
+                type="button"
+                class="btn-copiar-cupom"
+                data-cupom="DESSA10"
+                aria-label="Copiar cupom DESSA10"
+              >
+                Copiar
+              </button>
+            </div>
 
-    <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Ver oferta</a>
-  </div>
-</article>
+            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Ver oferta</a>
+          </div>
+        </article>
 
         <article class="card">
           <img src="imagens/natal-2.jpg" alt="Destaque especial 2" class="card-img" />
           <div class="card-body">
             <h3>Achado em Destaque #2</h3>
             <p>Descrição rápida do produto, benefício principal ou cupom.</p>
+            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Ver oferta</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="vitrine-section" id="beleza">
+      <h2>Beleza</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-body">
+            <h3>Produto de Beleza</h3>
+            <p>Cuidados pessoais, skincare, acessórios ou achados com ótimo custo-benefício.</p>
+            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Ver oferta</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="vitrine-section" id="casa">
+      <h2>Casa</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-body">
+            <h3>Produto para Casa</h3>
+            <p>Organizadores, utilidades domésticas ou itens práticos para o dia a dia.</p>
             <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Ver oferta</a>
           </div>
         </article>
@@ -94,38 +118,39 @@
       <p>&copy; 2026 Achei Dessa. Todos os direitos reservados.</p>
     </div>
   </footer>
+
   <script>
-  document.addEventListener("click", async (event) => {
-    const botao = event.target.closest(".btn-copiar-cupom");
-    if (!botao) return;
+    document.addEventListener("click", async (event) => {
+      const botao = event.target.closest(".btn-copiar-cupom");
+      if (!botao) return;
 
-    const codigo = botao.dataset.cupom;
-    if (!codigo) return;
+      const codigo = botao.dataset.cupom;
+      if (!codigo) return;
 
-    try {
-      await navigator.clipboard.writeText(codigo);
-    } catch {
-      const campoTemp = document.createElement("textarea");
-      campoTemp.value = codigo;
-      campoTemp.setAttribute("readonly", "");
-      campoTemp.style.position = "absolute";
-      campoTemp.style.left = "-9999px";
-      document.body.appendChild(campoTemp);
-      campoTemp.select();
-      document.execCommand("copy");
-      document.body.removeChild(campoTemp);
-    }
+      try {
+        await navigator.clipboard.writeText(codigo);
+      } catch {
+        const campoTemp = document.createElement("textarea");
+        campoTemp.value = codigo;
+        campoTemp.setAttribute("readonly", "");
+        campoTemp.style.position = "absolute";
+        campoTemp.style.left = "-9999px";
+        document.body.appendChild(campoTemp);
+        campoTemp.select();
+        document.execCommand("copy");
+        document.body.removeChild(campoTemp);
+      }
 
-    const textoOriginal = botao.textContent;
-    botao.textContent = "Copiado!";
-    botao.classList.add("copiado");
+      const textoOriginal = botao.textContent;
+      botao.textContent = "Copiado!";
+      botao.classList.add("copiado");
 
-    clearTimeout(botao._timer);
-    botao._timer = setTimeout(() => {
-      botao.textContent = textoOriginal;
-      botao.classList.remove("copiado");
-    }, 1800);
-  });
-</script>
+      clearTimeout(botao._timer);
+      botao._timer = setTimeout(() => {
+        botao.textContent = textoOriginal;
+        botao.classList.remove("copiado");
+      }, 1800);
+    });
+  </script>
 </body>
 </html>
