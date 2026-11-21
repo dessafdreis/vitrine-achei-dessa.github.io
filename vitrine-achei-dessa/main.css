@@ -1,0 +1,251 @@
+/* =========================================================
+   CSS PRINCIPAL (MAIN) - VITRINE DE AFILIADOS
+   ========================================================= */
+
+:root {
+  /* Paleta e superfícies */
+  --bg-page: #f8f7f5;
+  --bg-surface: #ffffff;
+  --bg-soft: #f2efeb;
+  --bg-pill-primary: #18181b;
+  --bg-pill-secondary: #ffffff;
+
+  /* Tipografia */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --text-primary: #18181b;
+  --text-secondary: #52525b;
+  --text-muted: #71717a;
+  --text-on-dark: #ffffff;
+
+  /* Destaque (Shopee / ofertas) */
+  --accent: #ee4d2d;
+  --accent-hover: #d63c1e;
+  --accent-soft: rgba(238, 77, 45, 0.1);
+
+  /* Bordas, raios e sombras */
+  --border-light: #e4e4e7;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.05);
+  --shadow-btn: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Reset e base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Contêiner principal centralizado (formato mobile-first) */
+.main-container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 28px 16px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ---------------------------------------------------------
+   1. CABEÇALHO DO PERFIL E BOTÕES DE AÇÃO
+   --------------------------------------------------------- */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.profile-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 3px solid var(--bg-surface);
+  box-shadow: var(--shadow-card);
+  background-color: var(--bg-soft);
+}
+
+.profile-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.profile-bio-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.profile-tagline {
+  margin-top: 2px;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-soft);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.action-stack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.action-btn {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 18px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border: 1px solid var(--border-light);
+  background-color: var(--bg-pill-secondary);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-btn);
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-1px);
+  border-color: #d4d4d8;
+}
+
+.action-btn--primary {
+  background-color: var(--bg-pill-primary);
+  border-color: var(--bg-pill-primary);
+  color: var(--text-on-dark);
+}
+
+.action-btn--primary:hover {
+  background-color: #27272a;
+}
+
+/* ---------------------------------------------------------
+   2. SEÇÕES DE CATEGORIA E CABEÇALHOS
+   --------------------------------------------------------- */
+.section-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.section-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* ---------------------------------------------------------
+   3. CARROSSEL HORIZONTAL (ESTILO "ACHADINHOS DE NATAL")
+   --------------------------------------------------------- */
+.carousel-track {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 6px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none; /* Chrome / Safari */
+}
+
+.story-card {
+  flex: 0 0 156px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.story-media {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--bg-soft);
+  box-shadow: var(--shadow-card);
+}
+
+.story-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-overlay-label {
+  position: absolute;
+  inset: 0;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: 0.85rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.65);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 55%);
+}
+
+.story-caption {
+  font-size:

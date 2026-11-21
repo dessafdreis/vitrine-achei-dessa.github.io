@@ -1,0 +1,7 @@
+vitrine-achei-dessa/
+├── index.html      # Estrutura da página e links/produtos
+├── style.css       # O CSS principal que você pediu antes
+└── imagens/        # Fotos dos produtos, avatar e banner de cupom
+    ├── avatar.jpg
+    ├── natal-1.jpg
+    └── cupom-banner.jpg
