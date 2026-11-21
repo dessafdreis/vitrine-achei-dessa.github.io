@@ -47,6 +47,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -64,7 +65,6 @@ a {
   gap: 28px;
 }
 
-/* Cabeçalho do perfil */
 .profile-header {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-card);
@@ -79,10 +79,8 @@ a {
 }
 
 .profile-avatar {
-  width: 84px;
-  height: 84px;
-  max-width: 84px;
-  max-height: 84px;
+  width: 78px;
+  height: 78px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--border-pill);
@@ -127,6 +125,7 @@ a {
   justify-content: center;
   gap: 8px;
   width: 100%;
+  min-height: 42px;
   padding: 11px 16px;
   border-radius: var(--radius-pill);
   background-color: var(--bg-surface);
@@ -155,7 +154,6 @@ a {
   color: var(--text-inverse);
 }
 
-/* Barra de categorias em pílulas */
 .category-pills,
 .groups-row {
   display: flex;
@@ -168,6 +166,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 36px;
   padding: 8px 14px;
   border-radius: var(--radius-pill);
   background-color: var(--bg-surface);
@@ -186,7 +185,6 @@ a {
   transform: translateY(-1px);
 }
 
-/* Seções */
 .section-block {
   display: flex;
   flex-direction: column;
@@ -216,7 +214,6 @@ a {
   color: var(--text-secondary);
 }
 
-/* Bloco de Cupons de desconto Shopee */
 .coupon-banner {
   background-color: var(--bg-card-soft);
   border: 1px solid var(--border-card);
@@ -230,7 +227,6 @@ a {
 .coupon-banner img {
   width: 84px;
   height: 112px;
-  max-height: 112px;
   border-radius: var(--radius-sm);
   object-fit: cover;
   flex-shrink: 0;
@@ -243,7 +239,6 @@ a {
   gap: 6px;
 }
 
-/* Carrossel horizontal em destaque */
 .carousel-track {
   display: flex;
   gap: 14px;
@@ -279,7 +274,6 @@ a {
   position: relative;
   width: 100%;
   height: 165px;
-  max-height: 165px;
   border-radius: var(--radius-sm);
   overflow: hidden;
   background-color: var(--bg-card-soft);
@@ -317,7 +311,6 @@ a {
   margin-top: auto;
 }
 
-/* Cards de produto */
 .product-card {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-card);
@@ -332,7 +325,6 @@ a {
 .product-thumb {
   width: 100%;
   height: 190px;
-  max-height: 190px;
   border-radius: var(--radius-md);
   overflow: hidden;
   background-color: var(--bg-card-soft);
@@ -342,7 +334,6 @@ a {
 .card-img {
   width: 100%;
   height: 100%;
-  max-height: 190px;
   object-fit: cover;
   object-position: top center;
 }
@@ -375,13 +366,13 @@ a {
   color: var(--text-secondary);
 }
 
-/* Botões CTA escuros */
 .btn-cta,
 .btn-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  min-height: 42px;
   margin-top: 4px;
   padding: 11px 16px;
   border-radius: var(--radius-pill);
@@ -407,7 +398,6 @@ a {
   color: var(--text-muted);
 }
 
-/* Rodapé */
 .page-footer {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-card);
@@ -430,4 +420,92 @@ a {
   .coupon-banner img {
     width: 100%;
     height: 150px;
-    max-height: 150
+  }
+}
+
+/* Trava global final */
+header img,
+.profile-header img,
+.profile-avatar,
+img.profile-avatar,
+.avatar,
+img.avatar {
+  width: 78px !important;
+  height: 78px !important;
+  max-width: 78px !important;
+  max-height: 78px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+  flex-shrink: 0 !important;
+}
+
+.story-media img {
+  width: 100% !important;
+  height: 165px !important;
+  max-height: 165px !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+}
+
+.product-thumb img,
+.card-img,
+img.card-img {
+  width: 100% !important;
+  height: 190px !important;
+  max-height: 190px !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+}
+
+.action-btn,
+a.action-btn,
+.category-pill,
+a.category-pill,
+.btn-cta,
+a.btn-cta,
+.btn-link,
+a.btn-link,
+.btn-topo,
+a.btn-topo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 42px !important;
+  padding: 10px 16px !important;
+  border-radius: 9999px !important;
+  text-decoration: none !important;
+}
+
+.category-pill,
+a.category-pill {
+  display: inline-flex !important;
+  width: auto !important;
+  min-height: 36px !important;
+  padding: 8px 14px !important;
+  background-color: #ffffff !important;
+  color: #1a1a1a !important;
+  border: 1px solid #dcdcdc !important;
+}
+
+.action-btn,
+a.action-btn,
+.btn-topo,
+a.btn-topo {
+  width: 100% !important;
+  background-color: #ffffff !important;
+  color: #1a1a1a !important;
+  border: 1px solid #dcdcdc !important;
+}
+
+.action-btn--primary,
+a.action-btn--primary,
+.btn-cta,
+a.btn-cta,
+.btn-link,
+a.btn-link {
+  width: 100% !important;
+  background-color: #1f1f1f !important;
+  color: #ffffff !important;
+  border: 1px solid #1f1f1f !important;
+}
