@@ -180,16 +180,22 @@ img {
   color: var(--shopee-text);
   font-weight: 700;
   font-size: 0.95rem;
-  padding: 12px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
-  transition: transform 0.15s ease, background-color 0.2s ease;
+  padding: 12px 22px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+  transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .btn-resgatar-cupom:hover,
 .btn-resgatar-cupom:focus-visible {
-  background-color: #fff7f5;
+  background-color: #fff5f2;
   transform: translateY(-2px);
+}
+
+.btn-resgatar-cupom:active {
+  transform: scale(0.99);
 }
 
 /* Seções e grid de cards */
@@ -256,138 +262,3 @@ main.container {
 }
 
 .card-body {
-  padding: 18px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.card-body h3 {
-  font-size: 1.08rem;
-  margin-bottom: 8px;
-  color: var(--text-main);
-}
-
-.card-body p {
-  font-size: 0.92rem;
-  color: var(--text-muted);
-  margin-bottom: 18px;
-  flex: 1;
-}
-
-/* Caixa de cupom e botão copiar */
-.cupom-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  background-color: var(--accent-soft);
-  border: 1px dashed var(--accent);
-  border-radius: 10px;
-  padding: 8px 12px;
-  margin-bottom: 14px;
-  font-size: 0.86rem;
-  color: var(--text-main);
-}
-
-.cupom-info {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.cupom-codigo {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-  color: var(--accent-hover);
-  background-color: #ffffff;
-  padding: 2px 8px;
-  border-radius: 6px;
-}
-
-.btn-copiar-cupom {
-  border: 1px solid var(--accent);
-  background-color: #ffffff;
-  color: var(--accent-hover);
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding: 5px 10px;
-  border-radius: 7px;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.btn-copiar-cupom:hover,
-.btn-copiar-cupom:focus-visible {
-  background-color: var(--accent);
-  color: #ffffff;
-}
-
-.btn-copiar-cupom.copiado {
-  background-color: #15803d;
-  border-color: #15803d;
-  color: #ffffff;
-}
-
-/* Botão de oferta */
-.btn-link {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  background-color: var(--accent);
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 0.94rem;
-  padding: 11px 16px;
-  border-radius: 10px;
-  transition: background-color 0.2s ease, transform 0.15s ease;
-}
-
-.btn-link:hover,
-.btn-link:focus-visible {
-  background-color: var(--accent-hover);
-}
-
-.btn-link:active {
-  transform: scale(0.99);
-}
-
-/* Rodapé */
-.site-footer {
-  background-color: var(--bg-surface);
-  border-top: 1px solid var(--border-color);
-  padding: 24px 0;
-  text-align: center;
-  color: var(--text-muted);
-  font-size: 0.88rem;
-}
-
-.site-footer p + p {
-  margin-top: 4px;
-}
-
-@media (max-width: 680px) {
-  .banner-shopee-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .btn-resgatar-cupom {
-    width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-}
