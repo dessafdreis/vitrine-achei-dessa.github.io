@@ -65,6 +65,7 @@ a {
   gap: 28px;
 }
 
+/* Cabeçalho do perfil */
 .profile-header {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-card);
@@ -154,6 +155,7 @@ a {
   color: var(--text-inverse);
 }
 
+/* Pílulas de categoria */
 .category-pills,
 .groups-row {
   display: flex;
@@ -185,6 +187,7 @@ a {
   transform: translateY(-1px);
 }
 
+/* Seções */
 .section-block {
   display: flex;
   flex-direction: column;
@@ -214,6 +217,7 @@ a {
   color: var(--text-secondary);
 }
 
+/* Banner de Cupons */
 .coupon-banner {
   background-color: var(--bg-card-soft);
   border: 1px solid var(--border-card);
@@ -239,6 +243,7 @@ a {
   gap: 6px;
 }
 
+/* Carrossel horizontal */
 .carousel-track {
   display: flex;
   gap: 14px;
@@ -252,7 +257,7 @@ a {
   display: none;
 }
 
-/* Padrao unificado: Achadinhos de Natal (.story-card) e categorias (.product-card) */
+/* Padrão original do Achadinhos de Natal aplicado também aos cards das categorias */
 .story-card,
 .product-card {
   flex: 0 0 185px;
@@ -314,7 +319,7 @@ a {
 
 .story-caption,
 .product-title {
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   font-weight: 600;
   color: var(--text-primary);
   line-height: 1.3;
@@ -322,7 +327,7 @@ a {
 
 .story-price,
 .product-price {
-  font-size: 0.94rem;
+  font-size: 0.92rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-top: auto;
@@ -334,25 +339,28 @@ a {
   line-height: 1.35;
 }
 
+/* Botões de compra nos cards de Achadinhos de Natal (.story-btn) e categorias (.btn-cta / .btn-link) */
+.story-btn,
 .btn-cta,
 .btn-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 38px;
+  min-height: 36px;
   margin-top: 4px;
-  padding: 9px 14px;
+  padding: 8px 12px;
   border-radius: var(--radius-pill);
   background-color: var(--bg-dark);
   border: 1px solid var(--bg-dark);
   color: var(--text-inverse);
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.15s ease, transform 0.15s ease;
 }
 
+.story-card:hover .story-btn,
 .btn-cta:hover,
 .btn-link:hover {
   background-color: var(--bg-dark-hover);
@@ -366,6 +374,7 @@ a {
   color: var(--text-muted);
 }
 
+/* Rodapé */
 .page-footer {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-card);
@@ -419,22 +428,27 @@ img.card-img {
   object-position: top center !important;
 }
 
-.action-btn,
-a.action-btn,
-.category-pill,
-a.category-pill,
+.story-card,
+.product-card {
+  flex: 0 0 185px !important;
+  width: 185px !important;
+}
+
+.story-btn,
 .btn-cta,
 a.btn-cta,
 .btn-link,
-a.btn-link,
-.btn-topo,
-a.btn-topo {
+a.btn-link {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  min-height: 40px !important;
-  padding: 9px 14px !important;
+  width: 100% !important;
+  min-height: 36px !important;
+  padding: 8px 12px !important;
   border-radius: 9999px !important;
+  background-color: #1f1f1f !important;
+  border: 1px solid #1f1f1f !important;
+  color: #ffffff !important;
   text-decoration: none !important;
 }
 
@@ -453,20 +467,19 @@ a.category-pill {
 a.action-btn,
 .btn-topo,
 a.btn-topo {
+  display: flex !important;
   width: 100% !important;
+  min-height: 42px !important;
+  padding: 11px 16px !important;
+  border-radius: 9999px !important;
   background-color: #ffffff !important;
   color: #1a1a1a !important;
   border: 1px solid #dcdcdc !important;
 }
 
 .action-btn--primary,
-a.action-btn--primary,
-.btn-cta,
-a.btn-cta,
-.btn-link,
-a.btn-link {
-  width: 100% !important;
+a.action-btn--primary {
   background-color: #1f1f1f !important;
   color: #ffffff !important;
-  border: 1px solid #1f1f1f !important;
+  border-color: #1f1f1f !important;
 }
