@@ -320,3 +320,73 @@ main.container {
   border-color: #15803d;
   color: #ffffff;
 }
+/* Banner Shopee */
+.banner-shopee {
+  padding: 20px 0 4px;
+}
+
+.banner-shopee-content {
+  background: linear-gradient(120deg, #ee4d2d 0%, #ff7337 100%);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.banner-shopee-kicker {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.18);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 8px;
+}
+
+.banner-shopee-text h2 {
+  font-size: 1.3rem;
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.banner-shopee-text p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.btn-resgatar-cupom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #d83b1c;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.btn-resgatar-cupom:hover,
+.btn-resgatar-cupom:focus-visible {
+  background-color: #fff7f5;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 680px) {
+  .banner-shopee-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-resgatar-cupom {
+    width: 100%;
+  }
+}
