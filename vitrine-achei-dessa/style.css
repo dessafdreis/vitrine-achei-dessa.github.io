@@ -151,6 +151,90 @@ img {
   transform: translateY(-1px);
 }
 
+/* Botões de vitrine e redes acima dos cupons */
+.canais-topo {
+  padding: 18px 0 2px;
+}
+
+.canais-topo-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-topo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-surface-strong);
+  color: var(--text-main);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-topo:hover,
+.btn-topo:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-topo:active {
+  transform: scale(0.99);
+}
+
+.btn-topo-shopee {
+  border-color: var(--shopee-start);
+  color: var(--shopee-text);
+  background-color: #ffffff;
+}
+
+.btn-topo-shopee:hover,
+.btn-topo-shopee:focus-visible {
+  background-color: #fff6f3;
+}
+
+.btn-topo-tiktok {
+  border-color: rgba(29, 26, 34, 0.26);
+  color: var(--text-main);
+  background-color: #ffffff;
+}
+
+.btn-topo-tiktok:hover,
+.btn-topo-tiktok:focus-visible {
+  background-color: #f6f5f8;
+}
+
+.btn-topo-instagram {
+  border-color: var(--accent);
+  color: var(--accent-hover);
+  background-color: #ffffff;
+}
+
+.btn-topo-instagram:hover,
+.btn-topo-instagram:focus-visible {
+  background-color: #fff5f7;
+}
+
+@media (max-width: 600px) {
+  .canais-topo-botoes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-topo {
+    width: 100%;
+  }
+}
 /* Banner Shopee */
 .banner-shopee {
   padding: 22px 0 6px;
