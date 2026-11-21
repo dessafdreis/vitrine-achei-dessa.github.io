@@ -260,16 +260,235 @@ main.container {
   object-fit: cover;
   background-color: var(--accent-soft);
 }
-.grupo-achadinhos-box {
+
+.card-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-body h3 {
+  font-size: 1.08rem;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.card-body p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+  flex: 1;
+}
+
+/* Caixa de cupom e botão copiar */
+.cupom-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background-color: var(--accent-soft);
+  border: 1px dashed var(--accent);
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin-bottom: 14px;
+  font-size: 0.86rem;
+  color: var(--text-main);
+}
+
+.cupom-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cupom-codigo {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: var(--accent-hover);
+  background-color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.btn-copiar-cupom {
+  border: 1px solid var(--accent);
+  background-color: #ffffff;
+  color: var(--accent-hover);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-copiar-cupom:hover,
+.btn-copiar-cupom:focus-visible {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+.btn-copiar-cupom.copiado {
+  background-color: #15803d;
+  border-color: #15803d;
+  color: #ffffff;
+}
+
+/* Botão Ver oferta */
+.btn-link {
+  display: block;
+  width: 100%;
   text-align: center;
+  text-decoration: none;
+  background-color: var(--accent);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.94rem;
+  padding: 11px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-link:hover,
+.btn-link:focus-visible {
+  background-color: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.btn-link:active {
+  transform: scale(0.99);
+}
+
+/* Bloco Grupo de Achadinhos & Aviso de Afiliada */
+.grupo-achadinhos {
+  padding: 8px 0 36px;
+}
+
+.grupo-achadinhos-box {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.grupo-achadinhos-texto h2 {
+  font-size: 1.35rem;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.grupo-subtitulo {
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: var(--accent-hover);
+  margin-bottom: 6px;
+}
+
+.grupo-recado {
+  font-size: 0.94rem;
+  color: var(--text-main);
+  margin-bottom: 20px;
 }
 
 .grupo-botoes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
-.card-body {
+.btn-canal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 11px 18px;
+  border-radius: 10px;
+  color: #ffffff;
+  transition: transform 0.15s ease, opacity 0.2s ease;
+}
+
+.btn-canal:hover,
+.btn-canal:focus-visible {
+  transform: translateY(-2px);
+  opacity: 0.94;
+}
+
+.btn-whatsapp-grupo {
+  background-color: #16a34a;
+}
+
+.btn-telegram {
+  background-color: #0284c7;
+}
+
+.btn-whatsapp-canal {
+  background-color: #15803d;
+}
+
+.aviso-afiliada {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+  padding-top: 14px;
+}
+
+/* Rodapé */
+.site-footer {
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-color);
+  padding: 24px 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.site-footer p + p {
+  margin-top: 4px;
+}
+
+@media (max-width: 680px) {
+  .banner-shopee-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-resgatar-cupom {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grupo-botoes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-canal {
+    width: 100%;
+  }
+}
