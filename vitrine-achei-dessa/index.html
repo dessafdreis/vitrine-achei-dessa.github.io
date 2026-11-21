@@ -3,139 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Achei Dessa · Vitrine de achadinhos</title>
+  <title>Achei Dessa — Vitrine de Achadinhos</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="main-container">
-    <!-- 1. Cabeçalho do perfil -->
-    <header class="profile-header">
-      <img
-        class="profile-avatar"
-        src="imagens/avatar.jpg"
-        alt="Boneca 3D da Dessa"
-      />
-      <h1 class="profile-title">Achei Dessa</h1>
-
-      <ul class="profile-bio-list">
-        <li>Beleza, cosméticos e cuidados pessoais</li>
-        <li>🛍️ Achadinhos que valem a pena!</li>
-        <li>✨ Ofertas, utilidades e novidades.</li>
-        <li>🏡 Casa | Beleza | Moda| Acessórios| Pet </li>
-      </ul>
-
-      <span class="profile-tagline">Compra inteligente, sempre!</span>
-
-      <nav class="action-stack" aria-label="Links principais">
-        <a class="action-btn action-btn--primary" href="COLE_AQUI_LINK_VITRINE_SHOPEE" target="_blank" rel="noopener noreferrer nofollow">
-          🛒 Minha vitrine na Shopee
-        </a>
-        <a class="action-btn" href="COLE_AQUI_LINK_TIKTOK" target="_blank" rel="noopener noreferrer">
-          🎵 TikTok @achadinhosbydessa
-        </a>
-        <a class="action-btn" href="COLE_AQUI_LINK_INSTAGRAM" target="_blank" rel="noopener noreferrer">
-          📸 Instagram @acheidessa
-        </a>
-      </nav>
-    </header>
-
-    <!-- 2. Carrossel horizontal -->
-    <section id="natal" class="section-block">
-      <div class="section-header">
-        <h2 class="section-title">🎄 Achadinhos de Natal</h2>
-        <p class="section-subtitle">Sua casa linda pro Natal gastando pouco, miguxa!</p>
+  <header class="site-header">
+    <div class="container header-content">
+      <img src="imagens/avatar.jpg" alt="Avatar da Achei Dessa" class="avatar" />
+      <div class="header-text">
+        <h1>Achei Dessa</h1>
+        <p>Achadinhos, promoções e dicas selecionadas com carinho.</p>
       </div>
+    </div>
+  </header>
 
-      <div class="carousel-track">
-        <a class="story-card" href="COLE_AQUI_LINK_PRODUTO_1" target="_blank" rel="noopener noreferrer nofollow">
-          <div class="story-media">
-            <img src="imagens/natal-1.jpg" alt="Porta-sabonete em formato de árvore de Natal" />
-            <span class="story-overlay-label">Porta-sabonete de Natal</span>
+  <nav class="categories-nav" aria-label="Categorias">
+    <div class="container categories-list">
+      <a class="category-pill" href="#todos">✨ Todos</a>
+      <a class="category-pill" href="#fitness">💪 Fitness</a>
+      <a class="category-pill" href="#casa">🏠 Casa</a>
+      <a class="category-pill" href="#beleza">💄 Beleza</a>
+      <a class="category-pill" href="#especiais">🎄 Especiais</a>
+    </div>
+  </nav>
+
+  <main class="container" id="todos">
+    <section class="vitrine-section" id="especiais">
+      <h2>Destaques &amp; Especiais</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <img src="imagens/natal-1.jpg" alt="Destaque especial 1" class="card-img" />
+          <div class="card-body">
+            <h3>Achado em Destaque #1</h3>
+            <p>Descrição rápida do produto, benefício principal ou cupom.</p>
+            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Ver oferta</a>
           </div>
-          <span class="story-caption">Porta-sabonete árvore de Natal</span>
-          <strong class="story-price">R$ 49,90</strong>
-        </a>
+        </article>
 
-        <a class="story-card" href="COLE_AQUI_LINK_PRODUTO_2" target="_blank" rel="noopener noreferrer nofollow">
-          <div class="story-media">
-            <img src="imagens/natal-2.jpg" alt="Xícara de Natal 3D" />
-            <span class="story-overlay-label">Xícara de Natal 3D</span>
+        <article class="card">
+          <img src="imagens/natal-2.jpg" alt="Destaque especial 2" class="card-img" />
+          <div class="card-body">
+            <h3>Achado em Destaque #2</h3>
+            <p>Descrição rápida do produto, benefício principal ou cupom.</p>
+            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Ver oferta</a>
           </div>
-          <span class="story-caption">Xícara de Natal 3D</span>
-          <strong class="story-price">R$ 31,99</strong>
-        </a>
-      </div>
-
-      <p class="disclaimer-note">Preços podem mudar na Shopee.</p>
-    </section>
-
-    <!-- 3. Atalhos por categoria -->
-    <section class="section-block" aria-label="Categorias">
-      <div class="category-pills">
-        <a class="category-pill" href="#beleza">💄 Beleza</a>
-        <a class="category-pill" href="#perfumes">🌸 Perfumes</a>
-        <a class="category-pill" href="#moda">👗 Moda</a>
-        <a class="category-pill" href="#acessorios">👜 Acessórios</a>
-        <a class="category-pill" href="#casa">🏡 Casa</a>
-        <a class="category-pill" href="#fitness">💪 Fitness</a>
-        <a class="category-pill" href="#saude">💊 Saúde e Suplementos</a>                                                                                                      
-        <a class="category-pill" href="#pet">🐾 Pet</a>
-        
+        </article>
       </div>
     </section>
 
-    <!-- 4. Cupons -->
-    <section id="cupons" class="section-block">
-      <div class="coupon-banner">
-        <img src="imagens/cupom-banner.jpg" alt="Banner Shopee: Já resgatou seu cupom hoje?" />
-        <h2 class="section-title">🎟️ Cupons de desconto Shopee</h2>
-        <p class="section-subtitle">Pega teu cupom antes de comprar, miguxa, e economiza ainda mais!</p>
-        <a class="btn-cta" href="COLE_AQUI_LINK_CUPOM" target="_blank" rel="noopener noreferrer nofollow">
-          Resgatar cupom
-        </a>
+    <section class="vitrine-section" id="fitness">
+      <h2>Fitness</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-body">
+            <h3>Produto Fitness</h3>
+            <p>Adicione aqui os itens da categoria Fitness e os links afiliados.</p>
+            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Ver oferta</a>
+          </div>
+        </article>
       </div>
     </section>
-
-    <!-- 5. Exemplo de seção de categoria (Beleza) -->
-    <section id="beleza" class="section-block">
-      <div class="section-header">
-        <h2 class="section-title">💄 Beleza</h2>
-      </div>
-
-      <article class="product-card">
-        <div class="product-thumb">
-          <img src="imagens/salon-line.jpg" alt="Kit Cheirinho de Frutas Salon Line Kids" />
-        </div>
-        <span class="product-badge">+100 mil vendidos</span>
-        <h3 class="product-title">Kit Cheirinho de Frutas Salon Line Kids</h3>
-        <p class="product-price">R$ 115,15</p>
-        <p class="product-meta">3 cremes para pentear de 1kg</p>
-        <a class="btn-cta" href="COLE_AQUI_LINK_SALON_LINE" target="_blank" rel="noopener noreferrer nofollow">
-          Comprar na Shopee
-        </a>
-      </article>
-    </section>
-
-    <!-- 6. Grupos e rodapé -->
-    <section id="grupos" class="section-block">
-      <div class="section-header">
-        <h2 class="section-title">Entre no grupo de achadinhos</h2>
-        <p class="section-subtitle">Recebe as ofertas primeiro, miguxa 💌</p>
-      </div>
-      <div class="groups-row">
-        <a class="category-pill" href="COLE_AQUI_LINK_WHATSAPP" target="_blank" rel="noopener noreferrer">💬 Grupo WhatsApp</a>
-        <a class="category-pill" href="COLE_AQUI_LINK_TELEGRAM" target="_blank" rel="noopener noreferrer">✈️ Telegram</a>
-        <a class="category-pill" href="COLE_AQUI_LINK_CANAL_WHATSAPP" target="_blank" rel="noopener noreferrer">📢 Canal no WhatsApp</a>
-      </div>
-    </section>
-
-    <footer class="page-footer">
-      <p>Oi, miguxa! Obrigada por passar aqui 💖 · Achei Dessa</p>
-      <p class="disclaimer-note">
-        Links de afiliada: a Andressa pode ganhar comissão nas compras feitas por aqui, sem custo extra pra você.
-        Preços e cupons podem mudar na Shopee; confira o valor final antes de comprar.
-      </p>
-    </footer>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Achei Dessa. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
