@@ -260,5 +260,16 @@ main.container {
   object-fit: cover;
   background-color: var(--accent-soft);
 }
+.grupo-achadinhos-box {
+  text-align: center;
+}
+
+.grupo-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
 
 .card-body {
