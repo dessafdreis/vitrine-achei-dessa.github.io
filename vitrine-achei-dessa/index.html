@@ -3,330 +3,348 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Achei Dessa — Vitrine de Achadinhos</title>
-  <link rel="stylesheet" href="style.css?v=29" />
+  <title>Achei Dessa · Vitrine de achadinhos</title>
+  <link rel="stylesheet" href="style.css?v=34" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-content">
-      <img src="imagens/avatar.jpg" alt="Avatar da Achei Dessa" class="avatar" />
-      <div class="header-text">
-        <h1>Achei Dessa</h1>
-        <p class="header-tagline">🛍️ Achadinhos que valem a pena!</p>
-        <p class="header-sub">✨ Ofertas, utilidades e novidades. · Beleza, cosméticos e cuidados pessoais</p>
-        <p class="header-cats">🏡 Casa | Beleza | Moda · <strong>Compra inteligente, sempre!</strong></p>
-      </div>
-    </div>
-  </header>
+  <main class="main-container">
+    <!-- 1. Cabeçalho do perfil -->
+    <header class="profile-header">
+      <img
+        class="profile-avatar"
+        src="imagens/avatar.jpg"
+        alt="Avatar da Achei Dessa"
+      />
+      <h1 class="profile-title">Achei Dessa</h1>
 
-  <nav class="categories-nav" aria-label="Categorias">
-    <div class="container categories-list">
-      <a class="category-pill" href="#todos">🔥 Achados do dia</a>
-      <a class="category-pill" href="#beleza">💄 Beleza</a>
-      <a class="category-pill" href="#perfumes">🌸 Perfumes</a>
-      <a class="category-pill" href="#moda">👗 Moda</a>
-      <a class="category-pill" href="#acessorios">👜 Acessórios</a>
-      <a class="category-pill" href="#casa">🏠 Casa</a>
-      <a class="category-pill" href="#fitness">💪 Fitness</a>
-      <a class="category-pill" href="#saude-suplementacao">💊 Saude e Suplementação</a>
-      <a class="category-pill" href="#pet">🐾 Pet</a>
-      <a class="category-pill" href="#especiais">🎄 Especiais</a>
-    </div>
-  </nav>
+      <ul class="profile-bio-list">
+        <li>Beleza, cosméticos e cuidados pessoais</li>
+        <li>🛍️ Achadinhos que valem a pena!</li>
+        <li>✨ Ofertas, utilidades e novidades.</li>
+        <li>🏡 Casa | Beleza | Moda</li>
+      </ul>
 
-  <section class="canais-topo" aria-label="Links e redes sociais da Achei Dessa">
-    <div class="container canais-topo-botoes">
-      <a
-        href="https://shopee.com.br/SEU_LINK_DA_VITRINE_SHOPEE"
-        class="btn-topo btn-topo-shopee"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        🛒 Minha vitrine na Shopee
-      </a>
-      <a
-        href="https://www.tiktok.com/@achadinhosbydessa"
-        class="btn-topo btn-topo-tiktok"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        🎵 TikTok @achadinhosbydessa
-      </a>
-      <a
-        href="https://www.instagram.com/acheidessa"
-        class="btn-topo btn-topo-instagram"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        📸 Instagram @acheidessa
-      </a>
-    </div>
-  </section>
+      <span class="profile-tagline">Compra inteligente, sempre!</span>
 
-  <section class="banner-shopee" aria-label="Cupons de desconto Shopee">
-    <div class="container banner-shopee-content">
-      <div class="banner-shopee-text">
-        <span class="banner-shopee-kicker">Banner Shopee: Já resgatou seu cupom hoje?</span>
-        <h2>🎟️ Cupons de desconto Shopee</h2>
-        <p>Pega teu cupom antes de comprar, miguxa, e economiza ainda mais!</p>
-      </div>
-      <a
-        href="https://shopee.com.br"
-        class="btn-resgatar-cupom"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Resgatar cupom
-      </a>
-    </div>
-  </section>
-
-  <main class="container" id="todos">
-    <section class="vitrine-section" id="especiais">
-      <h2>Destaques &amp; Especiais</h2>
-      <p class="section-subtitle">Sua casa linda gastando pouco, miguxa! Preços podem mudar na Shopee.</p>
-      <div class="cards-grid">
-        <article class="card card-destaque">
-          <span class="badge-selo">🔥 Achadinho do Dia</span>
-          <img src="imagens/01_capa.png" alt="Achado em Destaque #1" class="card-img" />
-          <div class="card-body">
-            <h3>Achado em Destaque #1</h3>
-            <p>🛍️ Achadinhos que valem a pena! Descrição rápida do produto, benefício principal ou promoção ativa.</p>
-            <p class="preco-item">R$ 49,90</p>
-
-            <div class="cupom-box">
-              <div class="cupom-info">
-                <span>Cupom:</span>
-                <strong class="cupom-codigo">DESSA10</strong>
-              </div>
-              <button
-                type="button"
-                class="btn-copiar-cupom"
-                data-cupom="DESSA10"
-                aria-label="Copiar cupom DESSA10"
-              >
-                Copiar
-              </button>
-            </div>
-
-            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Comprar na Shopee</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <span class="badge-selo">Moda</span>
-          <img src="imagens/capa_camisetao_tule.png" alt="Camisetão de tule transparente" class="card-img" />
-          <div class="card-body">
-            <h3>Camisetão de tule transparente</h3>
-            <p>✨ Ofertas, utilidades e novidades. Compra inteligente, sempre!</p>
-            <p class="preco-item">R$ 31,99</p>
-            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Comprar na Shopee</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="vitrine-section" id="beleza">
-      <h2>Beleza, cosméticos e cuidados pessoais</h2>
-      <p class="section-subtitle">Pra sua rotina de cuidado, miguxa! Preços podem mudar na Shopee.</p>
-      <div class="cards-grid">
-        <article class="card">
-          <div class="card-body">
-            <h3>Produto de Beleza</h3>
-            <p>Cuidados pessoais, skincare, cosméticos ou achados com ótimo custo-benefício. Compra inteligente, sempre!</p>
-            <p class="preco-item">R$ 24,90</p>
-            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Comprar na Shopee</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="vitrine-section" id="perfumes">
-      <h2>Perfumes</h2>
-      <p class="section-subtitle">Fragrâncias marcantes para o dia a dia. Preços podem mudar na Shopee.</p>
-      <div class="cards-grid">
-        <article class="card">
-          <div class="card-body">
-            <h3>Perfume em Destaque</h3>
-            <p>Fragrâncias, body splashes ou kits com ótimas avaliações e ofertas.</p>
-            <p class="preco-item">R$ 59,90</p>
-            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Comprar na Shopee</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="vitrine-section" id="moda">
-      <h2>Moda</h2>
-      <p class="section-subtitle">🏡 Casa | Beleza | Moda — Peças versáteis e tendências selecionadas.</p>
-      <div class="cards-grid">
-        <article class="card">
-          <div class="card-body">
-            <h3>Peça de Moda</h3>
-            <p>Roupas versáteis, conjuntos, básicos ou tendências selecionadas para o seu guarda-roupa.</p>
-            <p class="preco-item">R$ 44,90</p>
-            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Comprar na Shopee</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="vitrine-section" id="acessorios">
-      <h2>Acessórios</h2>
-      <p class="section-subtitle">Detalhes que completam o look sem pesar no bolso.</p>
-      <div class="cards-grid">
-        <article class="card">
-          <div class="card-body">
-            <h3>Acessório Selecionado</h3>
-            <p>Bolsas, semijoias, cintos, bonés ou detalhes que completam o look.</p>
-            <p class="preco-item">R$ 29,90</p>
-            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Comprar na Shopee</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="vitrine-section" id="casa">
-      <h2>Casa</h2>
-      <p class="section-subtitle">Organização e praticidade para deixar a casa ainda mais acolhedora.</p>
-      <div class="cards-grid">
-        <article class="card">
-          <div class="card-body">
-            <h3>Produto para Casa</h3>
-            <p>Organizadores, utilidades domésticas ou itens práticos para o dia a dia.</p>
-            <p class="preco-item">R$ 34,90</p>
-            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Comprar na Shopee</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="vitrine-section" id="fitness">
-      <h2>Fitness</h2>
-      <p class="section-subtitle">Conforto e desempenho para seus treinos diários.</p>
-      <div class="cards-grid">
-        <article class="card">
-          <div class="card-body">
-            <h3>Produto Fitness</h3>
-            <p>Adicione aqui os itens da categoria Fitness e os links afiliados.</p>
-            <p class="preco-item">R$ 49,90</p>
-            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Comprar na Shopee</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="vitrine-section" id="saude-suplementacao">
-      <h2>Saude e Suplementação</h2>
-      <p class="section-subtitle">Suplementos e cuidados diários com ótimo custo-benefício.</p>
-      <div class="cards-grid">
-        <article class="card">
-          <div class="card-body">
-            <h3>Item de Saúde e Suplementação</h3>
-            <p>Suplementos, vitaminas ou produtos de cuidado diário com boas ofertas.</p>
-            <p class="preco-item">R$ 128,89</p>
-            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Comprar na Shopee</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="vitrine-section" id="pet">
-      <h2>Pet</h2>
-      <p class="section-subtitle">Mimos e acessórios para o seu pet aproveitar.</p>
-      <div class="cards-grid">
-        <article class="card">
-          <div class="card-body">
-            <h3>Achado para Pet</h3>
-            <p>Brinquedos, comedouros, camas ou acessórios para cães e gatos.</p>
-            <p class="preco-item">R$ 27,90</p>
-            <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">Comprar na Shopee</a>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <section class="grupo-achadinhos" aria-label="Entre no grupo de achadinhos">
-    <div class="container grupo-achadinhos-box">
-      <div class="grupo-achadinhos-texto">
-        <h2>Entre no grupo de achadinhos</h2>
-        <p class="grupo-subtitulo">Recebe as ofertas primeiro, miguxa 💌</p>
-        <p class="grupo-recado">Oi, miguxa! Obrigada por passar aqui 💖 · <strong>Achei Dessa</strong></p>
-      </div>
-
-      <div class="grupo-botoes">
+      <nav class="action-stack" aria-label="Links principais">
         <a
+          class="action-btn action-btn--primary"
+          href="https://shopee.com.br/SEU_LINK_DA_VITRINE_SHOPEE"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          🛒 Minha vitrine na Shopee
+        </a>
+        <a
+          class="action-btn"
+          href="https://www.tiktok.com/@achadinhosbydessa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🎵 TikTok @achadinhosbydessa
+        </a>
+        <a
+          class="action-btn"
+          href="https://www.instagram.com/acheidessa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📸 Instagram @acheidessa
+        </a>
+      </nav>
+    </header>
+
+    <!-- 2. Carrossel horizontal em destaque -->
+    <section id="destaques" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">🎄 Achadinhos de Natal</h2>
+        <p class="section-subtitle">Sua casa linda pro Natal gastando pouco, miguxa!</p>
+      </div>
+
+      <div class="carousel-track">
+        <a class="story-card" href="#" target="_blank" rel="noopener noreferrer nofollow">
+          <div class="story-media">
+            <img src="imagens/01_capa.png" alt="Porta-sabonete em formato de árvore de Natal" />
+            <span class="story-overlay-label">Natal</span>
+          </div>
+          <span class="story-caption">Porta-sabonete árvore de Natal</span>
+          <strong class="story-price">R$ 49,90</strong>
+        </a>
+
+        <a class="story-card" href="#" target="_blank" rel="noopener noreferrer nofollow">
+          <div class="story-media">
+            <img src="imagens/capa_camisetao_tule.png" alt="Camisetão de tule transparente" />
+            <span class="story-overlay-label">Moda</span>
+          </div>
+          <span class="story-caption">Camisetão de tule transparente</span>
+          <strong class="story-price">R$ 31,99</strong>
+        </a>
+      </div>
+
+      <p class="disclaimer-note">Preços podem mudar na Shopee.</p>
+    </section>
+
+    <!-- 3. Atalhos rápidos por categoria -->
+    <section class="section-block" aria-label="Navegação por categorias">
+      <div class="category-pills">
+        <a class="category-pill" href="#saude">💊 Saúde e Suplementos</a>
+        <a class="category-pill" href="#achados-do-dia">⚡ Achados do dia</a>
+        <a class="category-pill" href="#cupons">🎟️ Cupons</a>
+        <a class="category-pill" href="#beleza">💄 Beleza</a>
+        <a class="category-pill" href="#perfumes">🌸 Perfumes</a>
+        <a class="category-pill" href="#moda">👗 Moda</a>
+        <a class="category-pill" href="#acessorios">👜 Acessórios</a>
+        <a class="category-pill" href="#casa">🏡 Casa</a>
+        <a class="category-pill" href="#fitness">💪 Fitness</a>
+        <a class="category-pill" href="#pet">🐾 Pet</a>
+        <a class="category-pill" href="#grupos">💬 Grupos</a>
+      </div>
+    </section>
+
+    <!-- 4. Saúde e Suplementos -->
+    <section id="saude" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">💊 Saúde e Suplementos</h2>
+        <p class="section-subtitle">Pra sua rotina de cuidado, miguxa!</p>
+      </div>
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img src="imagens/01_capa.png" alt="Whey Protein Black Skull" />
+        </div>
+        <span class="product-badge">Destaque</span>
+        <h3 class="product-title">Whey Protein Black Skull</h3>
+        <p class="product-price">R$ 128,89</p>
+        <p class="product-meta">Suplemento para rotina de treinos e nutrição diária</p>
+        <a class="btn-cta" href="#" target="_blank" rel="noopener noreferrer nofollow">
+          Comprar na Shopee
+        </a>
+      </article>
+    </section>
+
+    <!-- 5. Achados do dia -->
+    <section id="achados-do-dia" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">⚡ Achados do dia</h2>
+        <p class="section-subtitle">Selecionados hoje para economizar com estilo.</p>
+      </div>
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img src="imagens/capa_camisetao_tule.png" alt="Achado do dia em destaque" />
+        </div>
+        <span class="product-badge">Oferta do dia</span>
+        <h3 class="product-title">Achado do Dia — Utilidade Selecionada</h3>
+        <p class="product-price">R$ 39,90</p>
+        <p class="product-meta">Atualize com o produto em destaque do dia</p>
+        <a class="btn-cta" href="#" target="_blank" rel="noopener noreferrer nofollow">
+          Comprar na Shopee
+        </a>
+      </article>
+    </section>
+
+    <!-- 6. Cupons -->
+    <section id="cupons" class="section-block">
+      <div class="coupon-banner">
+        <img src="imagens/01_capa.png" alt="Banner Shopee: Já resgatou seu cupom hoje?" />
+        <div class="coupon-content">
+          <h2 class="section-title">🎟️ Cupons de desconto Shopee</h2>
+          <p class="section-subtitle">Pega teu cupom antes de comprar, miguxa, e economiza ainda mais!</p>
+          <a class="btn-cta" href="https://shopee.com.br" target="_blank" rel="noopener noreferrer nofollow">
+            Resgatar cupom
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Beleza -->
+    <section id="beleza" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">💄 Beleza</h2>
+        <p class="section-subtitle">Cuidados com cabelo, pele e autocuidado.</p>
+      </div>
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img src="imagens/01_capa.png" alt="Kit Cheirinho de Frutas Salon Line Kids" />
+        </div>
+        <span class="product-badge">+100 mil vendidos</span>
+        <h3 class="product-title">Kit Cheirinho de Frutas Salon Line Kids</h3>
+        <p class="product-price">R$ 115,15</p>
+        <p class="product-meta">3 cremes para pentear de 1kg</p>
+        <a class="btn-cta" href="#" target="_blank" rel="noopener noreferrer nofollow">
+          Comprar na Shopee
+        </a>
+      </article>
+    </section>
+
+    <!-- 8. Perfumes -->
+    <section id="perfumes" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">🌸 Perfumes</h2>
+        <p class="section-subtitle">Fragrâncias e kits para o dia a dia.</p>
+      </div>
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img src="imagens/01_capa.png" alt="Kit 4 Perfumes Árabes" />
+        </div>
+        <span class="product-badge">Seleção especial</span>
+        <h3 class="product-title">Kit 4 Perfumes Árabes</h3>
+        <p class="product-price">R$ 89,90</p>
+        <p class="product-meta">Variedade de notas marcantes</p>
+        <a class="btn-cta" href="#" target="_blank" rel="noopener noreferrer nofollow">
+          Comprar na Shopee
+        </a>
+      </article>
+    </section>
+
+    <!-- 9. Moda -->
+    <section id="moda" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">👗 Moda</h2>
+        <p class="section-subtitle">Looks versáteis para diferentes ocasiões.</p>
+      </div>
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img src="imagens/capa_camisetao_tule.png" alt="Vestido longo frente única, costas nuas" />
+        </div>
+        <span class="product-badge">Tendência</span>
+        <h3 class="product-title">Vestido Longo Frente Única, Costas Nuas</h3>
+        <p class="product-price">R$ 69,90</p>
+        <p class="product-meta">Confira cores e tamanhos disponíveis na loja</p>
+        <a class="btn-cta" href="#" target="_blank" rel="noopener noreferrer nofollow">
+          Ver na vitrine
+        </a>
+      </article>
+    </section>
+
+    <!-- 10. Acessórios -->
+    <section id="acessorios" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">👜 Acessórios</h2>
+        <p class="section-subtitle">Detalhes que completam o visual.</p>
+      </div>
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img src="imagens/01_capa.png" alt="Acessório selecionado da vitrine" />
+        </div>
+        <span class="product-badge">Achadinho</span>
+        <h3 class="product-title">Acessório Selecionado — Linha Principal</h3>
+        <p class="product-price">R$ 34,90</p>
+        <p class="product-meta">Prático para compor combinações diárias</p>
+        <a class="btn-cta" href="#" target="_blank" rel="noopener noreferrer nofollow">
+          Comprar na Shopee
+        </a>
+      </article>
+    </section>
+
+    <!-- 11. Casa -->
+    <section id="casa" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">🏡 Casa</h2>
+        <p class="section-subtitle">Organização, cozinha e decoração.</p>
+      </div>
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img src="imagens/01_capa.png" alt="Kit Potes de Vidro Herméticos" />
+        </div>
+        <span class="product-badge">Organização</span>
+        <h3 class="product-title">Kit Potes de Vidro Herméticos</h3>
+        <p class="product-price">R$ 64,90</p>
+        <p class="product-meta">Ideal para manter mantimentos conservados</p>
+        <a class="btn-cta" href="#" target="_blank" rel="noopener noreferrer nofollow">
+          Comprar na Shopee
+        </a>
+      </article>
+    </section>
+
+    <!-- 12. Fitness -->
+    <section id="fitness" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">💪 Fitness</h2>
+        <p class="section-subtitle">Conforto e mobilidade para treinar.</p>
+      </div>
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img src="imagens/capa_camisetao_tule.png" alt="Calça legging canelada" />
+        </div>
+        <span class="product-badge">Treino</span>
+        <h3 class="product-title">Calça Legging Canelada</h3>
+        <p class="product-price">R$ 54,90</p>
+        <p class="product-meta">Veja mais opções na coleção fitness</p>
+        <a class="btn-cta" href="#" target="_blank" rel="noopener noreferrer nofollow">
+          Ver na Shopee
+        </a>
+      </article>
+    </section>
+
+    <!-- 13. Pet -->
+    <section id="pet" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">🐾 Pet</h2>
+        <p class="section-subtitle">Cuidados e mimos para o seu pet.</p>
+      </div>
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img src="imagens/01_capa.png" alt="Produto para pet selecionado" />
+        </div>
+        <span class="product-badge">Cuidado pet</span>
+        <h3 class="product-title">Item Selecionado para Pets</h3>
+        <p class="product-price">R$ 29,90</p>
+        <p class="product-meta">Conforto e praticidade no dia a dia</p>
+        <a class="btn-cta" href="#" target="_blank" rel="noopener noreferrer nofollow">
+          Comprar na Shopee
+        </a>
+      </article>
+    </section>
+
+    <!-- 14. Grupos e rodapé -->
+    <section id="grupos" class="section-block">
+      <div class="section-header">
+        <h2 class="section-title">Entre no grupo de achadinhos</h2>
+        <p class="section-subtitle">Recebe as ofertas primeiro, miguxa 💌</p>
+      </div>
+      <div class="groups-row">
+        <a
+          class="category-pill"
           href="https://chat.whatsapp.com/IbbmKeIQ513L2CP5hDKjWu?s=cl&p=a&iam=2"
-          class="btn-canal btn-whatsapp-grupo"
           target="_blank"
           rel="noopener noreferrer"
         >
           💬 Grupo WhatsApp
         </a>
         <a
+          class="category-pill"
           href="https://t.me/+KHEROe5RDLtmOTYx"
-          class="btn-canal btn-telegram"
           target="_blank"
           rel="noopener noreferrer"
         >
           ✈️ Telegram
         </a>
         <a
+          class="category-pill"
           href="https://whatsapp.com/channel/0029VaAYpX5LikgIj1dr5K0X"
-          class="btn-canal btn-whatsapp-canal"
           target="_blank"
           rel="noopener noreferrer"
         >
           📢 Canal no WhatsApp
         </a>
       </div>
+    </section>
 
-      <p class="aviso-afiliada">
-        Links de afiliada: a Andressa pode ganhar comissão nas compras feitas por aqui, sem custo extra pra você. Preços e cupons podem mudar na Shopee; confira o valor final antes de comprar.
+    <footer class="page-footer">
+      <p>Oi, miguxa! Obrigada por passar aqui 💖 · Achei Dessa</p>
+      <p class="disclaimer-note">
+        Links de afiliada: a Andressa pode ganhar comissão nas compras feitas por aqui, sem custo extra pra você.
+        Preços e cupons podem mudar na Shopee; confira o valor final antes de comprar.
       </p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>🛍️ Achadinhos que valem a pena! · Compra inteligente, sempre!</p>
-      <p>&copy; 2026 Achei Dessa. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <script>
-    document.addEventListener("click", async (event) => {
-      const botao = event.target.closest(".btn-copiar-cupom");
-      if (!botao) return;
-
-      const codigo = botao.dataset.cupom;
-      if (!codigo) return;
-
-      try {
-        await navigator.clipboard.writeText(codigo);
-      } catch {
-        const campoTemp = document.createElement("textarea");
-        campoTemp.value = codigo;
-        campoTemp.setAttribute("readonly", "");
-        campoTemp.style.position = "absolute";
-        campoTemp.style.left = "-9999px";
-        document.body.appendChild(campoTemp);
-        campoTemp.select();
-        document.execCommand("copy");
-        document.body.removeChild(campoTemp);
-      }
-
-      const textoOriginal = botao.textContent;
-      botao.textContent = "Copiado!";
-      botao.classList.add("copiado");
-
-      clearTimeout(botao._timer);
-      botao._timer = setTimeout(() => {
-        botao.textContent = textoOriginal;
-        botao.classList.remove("copiado");
-      }, 1800);
-    });
-  </script>
+    </footer>
+  </main>
 </body>
 </html>
