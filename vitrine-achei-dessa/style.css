@@ -64,7 +64,7 @@ a {
   gap: 28px;
 }
 
-/* 1. Cabeçalho do perfil */
+/* Cabeçalho do perfil */
 .profile-header {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-card);
@@ -120,7 +120,8 @@ a {
   gap: 10px;
 }
 
-.action-btn {
+.action-btn,
+.btn-topo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,7 +139,7 @@ a {
 }
 
 .action-btn:hover,
-.action-btn:focus-visible {
+.btn-topo:hover {
   background-color: var(--bg-card-soft);
   transform: translateY(-1px);
 }
@@ -149,8 +150,7 @@ a {
   color: var(--text-inverse);
 }
 
-.action-btn--primary:hover,
-.action-btn--primary:focus-visible {
+.action-btn--primary:hover {
   background-color: var(--bg-dark-hover);
   color: var(--text-inverse);
 }
@@ -179,8 +179,7 @@ a {
   transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
 }
 
-.category-pill:hover,
-.category-pill:focus-visible {
+.category-pill:hover {
   background-color: var(--bg-dark);
   border-color: var(--bg-dark);
   color: var(--text-inverse);
@@ -215,6 +214,33 @@ a {
 .section-subtitle {
   font-size: 0.86rem;
   color: var(--text-secondary);
+}
+
+/* Bloco de Cupons de desconto Shopee */
+.coupon-banner {
+  background-color: var(--bg-card-soft);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.coupon-banner img {
+  width: 84px;
+  height: 112px;
+  max-height: 112px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.coupon-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 /* Carrossel horizontal em destaque */
@@ -279,4 +305,192 @@ a {
 }
 
 .story-caption {
-  
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.story-price {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: auto;
+}
+
+/* Cards de produto */
+.product-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 14px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 190px;
+  max-height: 190px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--bg-card-soft);
+}
+
+.product-thumb img,
+.card-img {
+  width: 100%;
+  height: 100%;
+  max-height: 190px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.product-badge {
+  align-self: flex-start;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-card-soft);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-pill);
+  padding: 3px 10px;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.product-price {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.product-meta {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+}
+
+/* Botões CTA escuros */
+.btn-cta,
+.btn-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4px;
+  padding: 11px 16px;
+  border-radius: var(--radius-pill);
+  background-color: var(--bg-dark);
+  border: 1px solid var(--bg-dark);
+  color: var(--text-inverse);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.btn-cta:hover,
+.btn-link:hover {
+  background-color: var(--bg-dark-hover);
+  border-color: var(--bg-dark-hover);
+  color: var(--text-inverse);
+  transform: translateY(-1px);
+}
+
+.disclaimer-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Rodapé */
+.page-footer {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 20px 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 540px) {
+  .coupon-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .coupon-banner img {
+    width: 100%;
+    height: 150px;
+    max-height: 150px;
+  }
+}
+
+/* Trava definitiva de imagens, logo/avatar e botões */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.profile-avatar,
+img.profile-avatar,
+.avatar,
+img.avatar {
+  width: 84px !important;
+  height: 84px !important;
+  max-width: 84px !important;
+  max-height: 84px !important;
+  min-width: 84px !important;
+  min-height: 84px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+  flex-shrink: 0 !important;
+}
+
+.story-media,
+.story-media img {
+  width: 100% !important;
+  height: 165px !important;
+  max-height: 165px !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+}
+
+.product-thumb,
+.product-thumb img,
+.card-img,
+img.card-img {
+  width: 100% !important;
+  height: 190px !important;
+  max-height: 190px !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+}
+
+.coupon-banner img {
+  width: 84px !important;
+  height: 112px !important;
+  max-height: 112px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+}
+
+.action-btn,
+.category-pill,
+.btn-cta,
+.btn-link,
+.btn-topo {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+}
