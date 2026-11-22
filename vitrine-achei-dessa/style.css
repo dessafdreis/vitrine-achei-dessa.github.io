@@ -242,6 +242,24 @@ a {
   flex-direction: column;
   gap: 6px;
 }
+.banner-shopee-container {
+  max-width: 480px;
+  margin: 16px auto;
+  padding: 0 12px;
+}
+
+.banner-shopee-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.banner-shopee-img:hover {
+  transform: scale(1.02);
+}
 
 /* Carrossel horizontal */
 .carousel-track {
